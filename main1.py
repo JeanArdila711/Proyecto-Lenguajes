@@ -8,19 +8,19 @@ EMOJI_A_IMAGEN = {
     ":)": "emojicshd/png/005-sonriente.png",
     ":3": "emojicshd/png/064-perro-4.png",
     "xD": "emojicshd/png/010-risa.png",
-    ":/(": "emojicshd/png/009-triste.png",
+    ":\(": "emojicshd/png/009-triste.png",
     ":D": "emojicshd/png/058-riendo.png",
-    ";/)": "emojicshd/png/018-guino.png",
-    ":-/)": "emojicshd/png/006-feliz-1.png",
+    ";\)": "emojicshd/png/018-guino.png",
+    ":-\)": "emojicshd/png/006-feliz-1.png",
     "(y)": "emojicshd/png/031-me-gusta-1.png",
     "(n)": "emojicshd/png/028-pulgares-abajo.png",
     "<3": "emojicshd/png/067-corazon.png",
     ":-O": "emojicshd/png/055-sorpresa.png",
-    ":/(": "emojicshd/png/009-triste.png",
+    ":\(": "emojicshd/png/009-triste.png",
     ":O": "emojicshd/png/004-conmocionado.png",
     ":/": "emojicshd/png/008-confuso.png",
     ":*": "emojicshd/png/068-beso.png",
-    "/^/^": "emojicshd/png/016-estrella.png",
+    "\^\^": "emojicshd/png/016-estrella.png",
     "·--·": "emojicshd/png/069_gato.png",
 }
 
@@ -121,7 +121,7 @@ def analizador_lexicográfico(entrada):
     lista_emojis_encontrados, total_emojis = identificar_emojis(entrada)
 
     # Mostrar el resultado en la etiqueta de salida
-    palabras_espanol = VerificadorPalabras("emoji_parser-main\diccionario.txt")
+    palabras_espanol = VerificadorPalabras("diccionario.txt")
     total_palabras = palabras_espanol.contar_palabras_espanol(
         entrada, lista_emojis_encontrados
     )
@@ -133,7 +133,7 @@ def analizador_lexicográfico(entrada):
     entrada_con_emojis = reemplazar_emojis_con_imagenes(
         entrada, lista_emojis_encontrados
     )
-    lista_imagenes = texto_a_imagenes(entrada_con_emojis)   
+    lista_imagenes = texto_a_imagenes(entrada_con_emojis)
     concatenar_imagenes(lista_imagenes)
 
     # Mostrar imagen como salida
@@ -164,7 +164,7 @@ label_texto_adicional.pack(anchor="ne")
 label_texto_adicional1.pack(anchor="ne")
 
 # Imagen
-imagen = Image.open("emoji_parser-main\emojicshd\logo_eafit_completo.png")
+imagen = Image.open("emojicshd/logo_eafit_completo.png")
 imagen = imagen.resize((300, 100), Image.LANCZOS)
 render = ImageTk.PhotoImage(imagen)
 imagen_label = tk.Label(ventana, image=render)
