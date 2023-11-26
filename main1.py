@@ -14,14 +14,12 @@ EMOJI_A_IMAGEN = {
     ":-\)": "emojicshd/png/006-feliz-1.png",
     "(y)": "emojicshd/png/031-me-gusta-1.png",
     "(n)": "emojicshd/png/028-pulgares-abajo.png",
-    "<3": "emojicshd/png/067-corazon.png",
     ":-O": "emojicshd/png/055-sorpresa.png",
     ":\(": "emojicshd/png/009-triste.png",
     ":O": "emojicshd/png/004-conmocionado.png",
     ":/": "emojicshd/png/008-confuso.png",
     ":*": "emojicshd/png/068-beso.png",
-    "\^\^": "emojicshd/png/016-estrella.png",
-    "·--·": "emojicshd/png/069_gato.png",
+    "\^\^": "emojicshd/png/016-estrella.png"
 }
 
 # expresión regular para identificar emojis
